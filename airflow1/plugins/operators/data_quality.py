@@ -3,6 +3,7 @@ from airflow.models import BaseOperator
 from airflow.utils.decorators import apply_defaults
 from airflow.contrib.hooks.aws_hook import AwsHook
 
+
 class DataQualityOperator(BaseOperator):
     ui_color = '#89DA59'
 
@@ -29,4 +30,5 @@ class DataQualityOperator(BaseOperator):
             result = records[0][0]
 
             if result != expected_result:
-                raise ValueError(f"Data quality check failed. Expected result: {expected_result}, Actual result: {result}")
+                raise ValueError(
+                    f"Data quality check failed. Expected result: {expected_result}, Actual result: {result}")

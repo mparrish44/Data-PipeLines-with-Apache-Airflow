@@ -103,8 +103,8 @@ class SqlQueries:
         );
     """
 
-    #Table Insert Queries
-    
+    # Table Insert Queries
+
     songplay_table_insert = """
         SELECT
             md5(events.sessionid || events.start_time) songplay_id,

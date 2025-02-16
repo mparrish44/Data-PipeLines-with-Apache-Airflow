@@ -3,9 +3,10 @@ from airflow.models import BaseOperator
 from airflow.contrib.hooks.aws_hook import AwsHook
 from airflow.providers.amazon.aws.hooks.base_aws import AwsBaseHook  # Correct Import
 
+
 class StageToRedshiftOperator(BaseOperator):
     ui_color = '#358140'
-                                      
+
     def __init__(self,
                  redshift_conn_id='',
                  aws_credentials_id='',

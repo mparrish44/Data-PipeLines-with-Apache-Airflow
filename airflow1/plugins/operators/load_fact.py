@@ -3,6 +3,7 @@ from airflow.models import BaseOperator
 from airflow.utils.decorators import apply_defaults
 from airflow.contrib.hooks.aws_hook import AwsHook
 
+
 class LoadFactOperator(BaseOperator):
     ui_color = '#F98866'
 
