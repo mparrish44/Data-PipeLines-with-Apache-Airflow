@@ -15,7 +15,7 @@ s3_prefix = Variable.get('s3_prefix')
 
 default_args = {
     'owner': 'parrish@wgu',
-    'start_date': datetime(2023, 7, 16),  # Start at a fixed date in the past in stead of now (proper scheduling)
+    'start_date': datetime(2025, 2, 10),  # Start at a fixed date in the past in stead of now (proper scheduling)
     'depends_on_past': False,
     'retries': 3,
     'retry_delay': timedelta(minutes=5),
