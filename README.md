@@ -1,10 +1,6 @@
 ```markdown
 # Data Pipeline with Apache Airflow and AWS Redshift
 
-[![Build Status](https://img.shields.io/travis/com/your-username/your-repo.svg?style=flat-square)](https://travis-ci.com/your-username/your-repo)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
-[![Python Version](https://img.shields.io/badge/python-3.x-blue.svg?style=flat-square)](https://www.python.org/)
-
 ## Overview
 
 This project implements a robust ETL (Extract, Transform, Load) data pipeline orchestrated using **Apache Airflow**. The pipeline extracts data from a source system (e.g., S3), stages it in **AWS Redshift**, transforms the data, and loads it into dimension and fact tables to create a star schema data warehouse optimized for analytics queries.
