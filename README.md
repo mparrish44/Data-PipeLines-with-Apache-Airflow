@@ -21,6 +21,7 @@ The primary goal is to automate the process of regularly updating the Redshift d
 
 ## Pipeline Architecture (Conceptual)
 
+```
 [Source Data (e.g., S3)] --> [StageToRedshiftOperator] --> [Redshift Staging Tables]
 |
 +--> [LoadDimensionOperator] --> [Redshift Dimension Tables]
@@ -28,6 +29,7 @@ The primary goal is to automate the process of regularly updating the Redshift d
 +--> [LoadFactOperator] ------> [Redshift Fact Table]
 |
 +--> [DataQualityOperator] --> [Quality Checks Passed/Failed]
+```
 
 *(Optional: Replace the above ASCII art with a link to an actual diagram image if you have one.)*
 
@@ -128,7 +130,7 @@ The primary goal is to automate the process of regularly updating the Redshift d
 * Monitor the pipeline's progress, view logs, and check task statuses through the Airflow UI's Graph View, Tree View, etc.
 
 ## File Structure
-
+```
 .
 ├── dags/                     # Airflow DAG files
 │   └── final_project.py      # Main DAG definition file
@@ -146,6 +148,7 @@ The primary goal is to automate the process of regularly updating the Redshift d
 ├── README.md                 # Project documentation (this file)
 └── (Optional: create_tables.sql) # SQL script to create Redshift tables
 └── (Optional: .airflowignore)   # Specify files/dirs for Airflow scheduler to ignore
+```
 
 
 
