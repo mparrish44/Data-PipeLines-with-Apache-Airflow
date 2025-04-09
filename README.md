@@ -31,7 +31,6 @@ The primary goal is to automate the process of regularly updating the Redshift d
 +--> [DataQualityOperator] --> [Quality Checks Passed/Failed]
 ```
 
-*(Optional: Replace the above ASCII art with a link to an actual diagram image if you have one.)*
 
 ## Technologies Used
 
